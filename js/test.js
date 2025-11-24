@@ -1,9 +1,14 @@
-var longestConsecutive = function(nums) {
+
+const randomNums = [23, 1, 34, 3, 2,22, 24, 35, 25, 26, 27, 28, 29, 4, 5 ];
+
+const longestConsecutive = function(nums) {
     if (nums.length === 0) {
         return 0;
     }
 
     const numSet = new Set(nums);
+
+    console.log("numSet", numSet);
     let longestStreak = 0;
 
     for (const num of numSet) {
@@ -24,3 +29,5 @@ var longestConsecutive = function(nums) {
 
     return longestStreak;
 };
+
+console.log(longestConsecutive(randomNums));
