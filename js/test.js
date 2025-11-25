@@ -3,7 +3,7 @@ const numberSeries = [1, 200, 2, 283, 3, 4, 301, 5, 275];
 
 const findTheSecondLargestNumber = (nums) => {
 
-    if(nums.length < 1){
+    if(nums.length < 1 || !nums.length){
         return
     }
 
