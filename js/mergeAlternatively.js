@@ -26,13 +26,11 @@ const mergedAlternatively = (word1, word2) => {
 
     for(i=0; i < programLength; i++){
 
-        word1Char = word1[i];
-        finalString.push(word1Char);
-        word2Char = word2[i];
-        finalString.push(word2Char);
+        finalString.push(word1[i]);
+        finalString.push(word2[i]);
     }
 
-    console.log('finalString', finalString.join(""));
+    return finalString.join("")
 
 }
 
