@@ -1,0 +1,27 @@
+// # Given an integer array nums and an integer k, return true if there are two distinct indices i and j in the array such that nums[i] == nums[j] and abs(i - j) <= k. 
+
+// # Example 1:
+// # Input: nums = [1,2,3,1], k = 3
+
+
+const containDuplicate = (array, k) => {
+
+    let containMap = new Map();
+
+    for (i=0; i < array.length; i++){
+
+        if(containMap.has(array[i]) && i - containMap.get(array[i]) <= k ){
+
+            return true;
+
+        }
+
+        containMap.set(array[i], i);
+
+    }
+
+    return false;
+
+}
+
+console.log(containDuplicate([1,2,1], 3));
