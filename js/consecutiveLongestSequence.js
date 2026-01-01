@@ -6,7 +6,7 @@ const longestConsectiveSequence = (nums) => {
         return 0;
     }
 
-    const numsSet = new Set(nums);
+    const numsSet = new Set(nums); // removing the duplicates
     let longestStreak = 0;
 
     for (const num of numsSet) {
@@ -17,6 +17,7 @@ const longestConsectiveSequence = (nums) => {
             currentStreak = 1;
 
             while (numsSet.has(currentNumber + 1)) {
+                console.log('currentNumber:', currentNumber);
                 currentNumber++;
                 currentStreak++;
             }

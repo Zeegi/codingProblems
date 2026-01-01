@@ -1,7 +1,7 @@
 
 // testing the functionality of a simple addition function
 
-const array = [23, 1, 2221, 34, 90, 56, 12];
+const array = [23, 23, 1, 2221, 34, 90, 56, 12, 12, 12];
 
 // const testFunction = (parameter) => {
 //     let sum = 0
@@ -28,17 +28,19 @@ const array = [23, 1, 2221, 34, 90, 56, 12];
 
 // console.log(testFunction(array));
 
-const testFunction = (parameter) => {
-    let smallest = parameter[0];
-    for (i=1; i< parameter.length; i++){
-        if(parameter[i] < smallest){
-            smallest = parameter[i];
-        }
-    }
-    return smallest;
+const testFunction = () => {
+    let testObj = {}
+    // let smallest = parameter[0];
+    // for (i=1; i< parameter.length; i++){
+    //     if(parameter[i] < smallest){
+    //         smallest = parameter[i];
+    //     }
+    // }
+    return testObj(23);
+
 };
 
-console.log(testFunction(array));
+console.log(testFunction());
 
 //largest
 //smallest
